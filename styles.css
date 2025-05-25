@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #649b8e;
+  }
+
+  footer {
+    background-color: #649b8e;
+    color: #fff;
+    padding: 50px 40px 30px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .newsletter {
+    flex: 1 1 300px;
+    min-width: 250px;
+  }
+
+  .newsletter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .newsletter input[type="email"] {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+
+  .newsletter button {
+    background-color: #d36e3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    flex: 1 1 300px;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 250px;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #d36e3b;
+    margin: 40px 0 30px;
+  }
+
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+  .footer-column {
+    margin-bottom: 20px;
+  }
+  .footer-column li:hover {
+      color: #d36e3b;
+  }
+  .quick-link {
+      margin: 20px;
+  }
+  .quick-link a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s;
+  }
+  .quick-link a:hover {
+      color: #d36e3b;
+  }
+
+  /* iPad/Tablets */
+  @media (max-width: 1024px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-links {
+      justify-content: center;
+    }
+
+    .logo {
+      text-align: center;
+    }
+  }
+
+  /* iPhone/Small devices */
+  @media (max-width: 600px) {
+    .newsletter form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .newsletter input[type="email"],
+    .newsletter button {
+      width: 100%;
+    }
+
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
